@@ -25,6 +25,7 @@ git commit -m "comentario"
 ```
 - Crear un punto en la linea de tiempo :alarm_clock: de nuestros cambios y a estos se le es posible adjuntar un comentario
 - :eye: Los comentarios deben estar relacionados a los cambios que hice, esto es una recomendación
+
 ```
 git push origin main
 ````
@@ -32,7 +33,20 @@ git push origin main
 - Sirve para poder subir los cambios a nuestro repositorio en la nube, en este caso github
 ```
 git pull origin main
-````
+```
 
 - Sirve para poder descargar los cambios a nuestro repositorio en la nube, en este caso github
+
+```
+git branch
+```
+```
+git checkout -b develop
+```
+- sirve para crear un branch nuevo y luego trabajar en el
+- el -b es para crear un branch, si no hay -b coloco la rama a la que me quiero mover
+
+
+
+
 
