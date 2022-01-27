@@ -56,6 +56,16 @@ git checkout nombre_del_branch
 - Sirve para poder moverme entre ramas
 - 👁️ Si el checkout no tiene el -b solo es para moverse
 
+```
+git fetch
+```
+- actualiza cambios de otras ramas
+
+```
+git branch -d prueba
+```
+-Delete prueba
+
 
 
 
