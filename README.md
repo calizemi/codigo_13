@@ -49,8 +49,9 @@ git checkout -b nombre_del_branch
 - sirve para crear un branch nuevo y luego trabajar en el
 - el -b es para crear un branch, si no hay -b coloco la rama a la que me quiero mover
 
-
+```
 git checkout nombre_del_branch
+```
 
 - Sirve para poder moverme entre ramas
 - 👁️ Si el checkout no tiene el -b solo es para moverse
