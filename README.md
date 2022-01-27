@@ -40,11 +40,20 @@ git pull origin main
 ```
 git branch
 ```
+- Sirve para poder listar los branch que tengo localmente y me dice en cual me encuentro actualmente
+
 ```
-git checkout -b develop
+git checkout -b nombre_del_branch
 ```
+
 - sirve para crear un branch nuevo y luego trabajar en el
 - el -b es para crear un branch, si no hay -b coloco la rama a la que me quiero mover
+
+
+git checkout nombre_del_branch
+
+- Sirve para poder moverme entre ramas
+- 👁️ Si el checkout no tiene el -b solo es para moverse
 
 
 
