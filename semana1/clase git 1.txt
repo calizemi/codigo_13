@@ -13,6 +13,11 @@ git commit -m ---->> guardar un cambio, un punto de partid se agrega UN ccomenta
 git status para revisar el estado de mi carpeta
 git branch -m main para cambiar de master a main
  git remote add origin (direccion web repositorio github)
+git push origin main <<<para guardar los cambios
 
+
+archivos md. son Mark Down, permiten tener una documentacion de nuestros proyectos
+readme.md lo reconoce como archivo de documentacion lo ccual
+hace que se muestre en la pagina inicial
 
 
