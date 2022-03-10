@@ -1,0 +1,55 @@
+@import "./variable.scss";
+body{
+    margin:$padding-1;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: $colorPrincipal;
+}
+
+h1{
+    color: $colorTitulo;
+    padding:$padding-1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@mixin alertita($bg: green, $color-text: #fff) {
+    background-color: $bg;
+    padding: $padding-1;
+    border-radius: $padding-1;
+    color: $color-text;
+    margin-bottom: $padding-1;
+  }
+  
+  .success {
+    // aca en vez de hacer el estilo una y otra solo deberia llamar al mixin
+    @include alertita;
+  }
+  
+  .info {
+    @include alertita($bg: rgb(37, 194, 241));
+  }
+  
+  .warning {
+    @include alertita($bg: rgb(229, 245, 87));
+  }
+  
+  .danger {
+    @include alertita($bg: rgb(255, 110, 110));
+  }
+
+  @mixin generate-icons($name,$icon,$color,$size) {
+      .div-icon-#{$name}{
+          background: url("./images/#{icon}");
+          border:solid 2px $color;
+          background-size: contain;
+          background-repeat:no-repeat;
+          width:$size;
+          width:$size;
+      }
+
+      
+  } 
+
+  @include generate-icons ("phone","phone.jpeg",pink,400px);
+  @include generate-icons ("mail","mail.jpeg",red,100px);
+  @include generate-icons ("search","search.jpeg",yellow,200px);
+  @include generate-icons ("laptop","laptop.jpeg",blue,300px);

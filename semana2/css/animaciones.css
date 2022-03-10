@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* si usamos tablas esto no es lo ideal */
+    overflow-x: hidden;
+}
+.texto-animado{
+    animation-name: texto-volador;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    border: solid;
+}
+
+@keyframes texto-volador{
+    from{
+        margin-left: 100%;
+        width: 300%;
+        background-color: aqua;
+        border: none;
+    }
+    to{
+        margin-left: -100%;
+        background-color: brown;
+        color: white;
+        border: none;
+    }
+}
+.imagen-animada{
+    animation-name: imagen-resize;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    border: solid;
+}
+
+@keyframes imagen-resize{
+    from{
+        
+        width: 20px;
+        height: 20px;
+        
+    }
+    to{
+        width: 400px;
+        height: 400px;
+       
+    }
+}
+.box-uno{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    animation-name: box-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box-animation{
+    0%{
+        background-color: black;
+    }
+    25%{
+        background-color: violet;
+    }
+    50%{
+        background-color: pink;
+    }
+    75%{
+        background-color: green;
+    }
+    100%{
+        background-color: red;
+    }
+     
+}
+
+.ball-uno{
+    height: 100px;
+    width: 100px;
+    background-color: violet;
+    border-radius: 50%;
+    animation-name: ball-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes ball-animation{
+0%{
+    background-color: violet;
+}
+
+25%{
+    transform: translate(100px,100px);
+    background-color: violet;
+}
+50%{
+    transform: translate(200px,0px);
+    background-color: violet;
+}
+75%{
+    transform: translate(300px,100px);
+    background-color: violet;
+}
+100%{
+    background-color: white;
+}
+
+
+}
+
+.Lineas{
+    position: relative;
+    text-align:center;
+    width: 600px;
+    margin: auto;
+    font-size: 24px;
+    white-space: nowrap;
+    border-right: tomato 10px solid;
+    transform: translateY(-50%);
+
+
+}
+.texto-animado-dos{
+
+    animation: texto-animado-dos 5s steps(144) 1s normal both,
+    cursor 0.5s steps(50) infinite normal;
+    animation-iteration-count: infinite;
+    /* animation-name: texto-animado-dos;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4);
+    animation-fill-mode: both;
+    animation-direction: normal;
+    animation-delay: 1s; */
+
+
+}
+@keyframes texto-animado-dos{
+    from{
+        width: 0px;
+    
+    }
+    to{
+        width: 600px;
+    }
+
+}
+@keyframes cursor{
+    from{
+        border-right-color: violet;
+    }
+    to{
+        border-right-color: transparent;
+    }
+
+}
+

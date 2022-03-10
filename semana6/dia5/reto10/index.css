@@ -1,0 +1,11 @@
+.card-custom-bofy{
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-color: black;
+    display:flex;
+    align-items: start;
+    justify-content: end;
+    flex-direction: column;
+}

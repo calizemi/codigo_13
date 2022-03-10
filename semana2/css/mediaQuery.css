@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: cyan;
+}
+.section-principal{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    border: solid;
+    height: 100vh;
+}
+.section-principal div {
+    width: 100px;
+    height: 100px;
+}
+.box-one{
+    background-color: rgb(14, 11, 184);
+}
+.box-two{
+    background-color: rgb(170, 11, 184);
+}
+.box-three{
+    background-color: rgb(11, 184, 20);
+}
+/* El tamaño estandar de laptops pc o desktops minimo de 1200px */
+/* Esta condicion dice que cuando el ancho minimo de mi pantalla sea 1200 el colo de fondo sera rojo */
+@media only screen and (min-width: 1200px){
+    body {
+        background-color: darkgoldenrod;
+    }
+}
+@media only screen and (max-width: 992px){
+    body {
+        background-color: rgb(149, 11, 184);
+    }
+}
+
+@media only screen and (min-width: 600px){
+    body {
+        background-color: rgb(11, 149, 184);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        background-color: rgb(184, 11, 25);
+    }
+
+    .section-principal{
+        flex-direction: column-reverse;
+    }
+
+    .box-one{
+        background-color: darksalmon;
+    }
+}

@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family:  "Heebo",sans-serif ;
+}
+
+.header{
+  display: flex;
+  justify-content: flex-end;
+}
+.nav ul{
+  display: flex;
+  list-style:none;
+}
+
+.nav ul> li {
+  padding: 15px;
+}
+
+.nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.banner{
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tittle{
+  font-size: 3em;
+  font-weight: 500;
+
+}
+.resume{
+  width: 45%;
+  font-weight: 300;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.btn-primary{
+  background-color: tomato;
+  color: #fff;
+  border:none;
+  padding:15 px;
+  text-transform:capitalize;
+  font-size: 16px;
+  cursor:pointer
+}
+.img-profile{
+  width: 243px;
+  height: 243px;
+  border-radius: 50%;
+}
